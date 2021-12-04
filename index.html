@@ -10,9 +10,15 @@
     <link href='http://fonts.googleapis.com/css?family=Dancing Script' rel='stylesheet' type='text/css'>
 
     <style>
+      html {
+        min-height: 100%;
+        position: relative;
+      }
+
       body {
         font-family: 'Cormorant Garamond', sans-serif !important;
         font-size: 1.25rem;
+        margin-bottom: 60px;
       }
 
       .above-the-fold {
@@ -47,6 +53,14 @@
         padding: 2.5rem 0;
       }
 
+      .section:first-child {
+        padding: 5rem 0 2.5rem;
+      }
+
+      .section:last-child {
+        padding: 2.5rem 0 5rem;
+      }
+
       .section h2 {
         font-size: 2.5rem;
         font-weight: 600;
@@ -58,10 +72,13 @@
         margin-bottom: 2rem;
       }
 
-      /* .section:nth-child(odd) {
-        background-color: #1269C7;
-        color: #fff;
-      } */
+      .footer {
+        background-color: #f5f5f5;
+        bottom: 0;
+        height: 60px;
+        position: absolute;
+        width: 100%;
+      }
     </style>
     
     <title>Jess & Andy's Wedding - 2nd June 2023</title>
@@ -80,56 +97,64 @@
         </div>
       </div>
 
-      <div class="section">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-8 text-center">
-              <h2>Ceremony</h2>
-              <h3>
-                <a href="https://santowines.gr/" target="blank">Santo Winery</a>
-              </h3>
-              <!-- <img src="img/santo-winery.jpg" class="img-fluid w-75" alt="Santo Winery"> -->
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/l__PveT0bp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <div class="sections">
+        <div class="section">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-8 text-center">
+                <h2>Ceremony</h2>
+                <h3>
+                  <a href="https://santowines.gr/" target="blank">Santo Winery</a>
+                </h3>
+                <!-- <img src="img/santo-winery.jpg" class="img-fluid w-75" alt="Santo Winery"> -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/l__PveT0bp4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="section">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-8 text-center">
-              <h2>Reception</h2>
-              <h3>
-                <a href="https://www.pyrgos-santorini.com/" target="blank">Pyrgos Restaurant</a>
-              </h3>
-              <!-- <img src="img/pyrgos-restaurant.jpg" class="img-fluid rounded w-75" alt="Pyrgos Restaurant"> -->
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/izSj1-6WySE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="section">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-8 text-center">
+                <h2>Reception</h2>
+                <h3>
+                  <a href="https://www.pyrgos-santorini.com/" target="blank">Pyrgos Restaurant</a>
+                </h3>
+                <!-- <img src="img/pyrgos-restaurant.jpg" class="img-fluid rounded w-75" alt="Pyrgos Restaurant"> -->
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/izSj1-6WySE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div class="section">
-        <div class="container">
-          <div class="row justify-content-center">
-            <div class="col-md-8 text-center">
-              <h2>Resort</h2>
-              <h3>
-                <a href="https://www.tripadvisor.co.uk/Tourism-g658914-Kamari_Santorini_Cyclades_South_Aegean-Vacations.html" target="blank">Kamari, Santorini</a>
-              </h3>
-              <div class="embed-responsive embed-responsive-16by9">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/Z3ic_gfDXJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <div class="section">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-md-8 text-center">
+                <h2>Resort</h2>
+                <h3>
+                  <a href="https://www.tripadvisor.co.uk/Tourism-g658914-Kamari_Santorini_Cyclades_South_Aegean-Vacations.html" target="blank">Kamari, Santorini</a>
+                </h3>
+                <div class="embed-responsive embed-responsive-16by9">
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/Z3ic_gfDXJo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </main>
+    
+    <footer class="footer">
+      <div class="container text-center mt-3">
+        <p class="text-muted">Made with 💗 by Andrew Gunn</p>
+      </div>
+    </footer>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
