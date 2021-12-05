@@ -63,20 +63,11 @@ body {
   font-weight: 400;
 }
 
-@media (max-width: 576px) {
-  #countdown li {
-    font-size: 1.5rem;
-  }
+#countdown li {
+  font-size: 1.5rem;
 }
-
-@media (min-width: 576px) {
-  #countdown li:nth-child(odd) {
-    font-size: 2.5rem;
-  }
-
-  #countdown li:nth-child(even) {
-    font-size: 1.5rem;
-  }
+#countdown li:nth-child(odd):not(:last-child) {
+  font-size: 2.5rem;
 }
 
 .faq {

@@ -23,15 +23,19 @@
     if (days > 0) {
         innerHtml += `<li class="list-inline-item">${days}</li><li class="list-inline-item">${(days === 1 ? 'day' : 'days')}</li>`;
     }
+    else
+    {
+        if (days > 0 || hours > 0) {
+            innerHtml += `<li class="list-inline-item">${hours}</li><li class="list-inline-item">${(hours === 1 ? 'hour' : 'hours')}</li>`;
+        }
+        
+        if ((days > 0 && hours > 0) || minutes > 0) {
+            innerHtml += `<li class="list-inline-item">${minutes}</li><li class="list-inline-item">${(minutes === 1 ? 'minute' : 'minutes')}</li>`;
+        }
+        innerHtml += `<li class="list-inline-item">${seconds}</li><li class="list-inline-item">${(seconds === 1 ? 'second' : 'seconds')}</li>`;
+    }
 
-    if (days > 0 || hours > 0) {
-        innerHtml += `<li class="list-inline-item">${hours}</li><li class="list-inline-item">${(hours === 1 ? 'hour' : 'hours')}</li>`;
-    }
-    
-    if ((days > 0 && hours > 0) || minutes > 0) {
-        innerHtml += `<li class="list-inline-item">${minutes}</li><li class="list-inline-item">${(minutes === 1 ? 'minute' : 'minutes')}</li>`;
-    }
-    innerHtml += `<li class="list-inline-item">${seconds}</li><li class="list-inline-item">${(seconds === 1 ? 'second' : 'seconds')}</li>`;
+    innerHtml += '<li class="list-inline-item">to go</li>'
     innerHtml += '</ul>'
     document.getElementById('countdown').innerHTML = innerHtml;
 
