@@ -1,4 +1,10 @@
 (function () {
+    window.addEventListener('DOMContentLoaded', function(){
+        document.getElementById('wrapper').style.display = 'block';
+    });
+})();
+
+(function () {
     var countdownDate = new Date('Jun 2, 2023 16:00:00 GMT+0200').getTime();
     var updateCountdown = function() {
     var now = new Date().getTime();
